@@ -8,5 +8,5 @@ export interface ISearchDashboard {
 export interface IDBProvider {
     getDashboard?(appid: string, id: string): Promise<DashboardModel>;
     searchDashboards(search: ISearchDashboard, query?: Query): Promise<QueryResult<DashboardModel>>;
-    createDashboard(model: DashboardCreateModel): Promise<CreateResult>;
+    createDashboard(appid: string, model: DashboardCreateModel): Promise<CreateResult>;
 }
