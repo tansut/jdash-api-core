@@ -1,0 +1,23 @@
+{
+  "name": "jdash-api",
+  "version": "1.0.0",
+  "description": "JDash server library",
+  "main": "./lib/index.js",
+  "types": "./lib/definitions/index.d.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "@types/es6-shim": "^0.31.32",
+    "gulp": "^3.9.1",
+    "gulp-merge": "^0.1.1",
+    "gulp-typescript": "^3.1.3",
+    "mocha": "^3.2.0",
+    "should": "^11.1.1",
+    "typescript": "^2.1.6",
+    "jdash-core": "git+ssh://git@bitbucket.org:kalitte/jdash-core.git"
+  },
+  "author": "aibrite inc.",
+  "license": "ISC",
+  "dependencies": {}
+}
