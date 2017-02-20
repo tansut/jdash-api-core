@@ -1,7 +1,7 @@
 {
-  "name": "jdash-api",
+  "name": "jdash-api-core",
   "version": "1.0.0",
-  "description": "JDash server library",
+  "description": "JDash server core library",
   "main": "./lib/index.js",
   "types": "./lib/definitions/index.d.ts",
   "scripts": {
