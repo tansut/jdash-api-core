@@ -1,4 +1,4 @@
-import { Query, QueryResult, DashboardCreateModel, DashboardUpdateModel, DashletCreateModel, DashletModel, DashletUpdateModel, DashboardModel, CreateResult } from 'jdash-core';
+import { Query, QueryResult, GetDashboardResult, DashboardCreateModel, DashboardUpdateModel, DashletCreateModel, DashletModel, DashletUpdateModel, DashboardModel, CreateResult } from 'jdash-core';
 
 export interface ISearchDashboard {
     appid?: string | Array<string>;
@@ -12,7 +12,7 @@ export interface ISearchDashlet {
 }
 
 export interface IDBProvider {
-    getDashboard?(appid: string, id: string): Promise<DashboardModel>;
+    getDashboard?(appid: string, id: string): Promise<GetDashboardResult>;
     searchDashboards(search: ISearchDashboard, query?: Query): Promise<QueryResult<DashboardModel>>;
     createDashboard(appid: string, model: DashboardCreateModel): Promise<CreateResult>;
     deleteDashboard(appid: string, id: string): Promise<any>;
