@@ -20,7 +20,7 @@ export interface IDBProvider {
 
     createDashlet(model: DashletCreateModel): Promise<CreateResult>;
     searchDashlets(search: ISearchDashlet): Promise<Array<DashletModel>>;
-    deleteDashlet(appid: string, id: string): Promise<any>;
+    deleteDashlet(id: string): Promise<any>;
     updateDashlet(id: string, updateValues: DashletUpdateModel): Promise<any>;
 
 }
