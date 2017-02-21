@@ -17,6 +17,6 @@ export interface IDBProvider {
     updateDashboard(appid: string, id: string, updateValues: DashboardUpdateModel): Promise<any>;
     createDashlet(model: DashletCreateModel): Promise<CreateResult>;
     searchDashlets(search: ISearchDashlet): Promise<Array<DashletModel>>;
-    deleteDashlet(appid: string, id: string): Promise<any>;
+    deleteDashlet(id: string): Promise<any>;
     updateDashlet(id: string, updateValues: DashletUpdateModel): Promise<any>;
 }
