@@ -12,7 +12,7 @@ export interface ISearchDashlet {
 export interface IDBProvider {
     getDashboard?(appid: string, id: string): Promise<GetDashboardResult>;
     searchDashboards(search: ISearchDashboard, query?: Query): Promise<QueryResult<DashboardModel>>;
-    createDashboard(appid: string, model: DashboardModel): Promise<CreateResult>;
+    createDashboard(model: DashboardModel): Promise<CreateResult>;
     deleteDashboard(appid: string, id: string): Promise<any>;
     updateDashboard(appid: string, id: string, updateValues: DashboardUpdateModel): Promise<any>;
     createDashlet(model: DashletModel): Promise<CreateResult>;
